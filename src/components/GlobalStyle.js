@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lobster&display=swap');
+
   *{
     margin: 0;
     box-sizing: border-box;
@@ -8,9 +10,10 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background: #1b1b1b;
+    font-family: "Inter", sans-serif;
   }
   button{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     cursor: pointer;
     padding: 1rem 2.5rem;
@@ -18,16 +21,23 @@ const GlobalStyle = createGlobalStyle`
     background: transparent;
     color:#fff;
     transition: all 0.5s ease;
+    font-family: "Inter", sans-serif;
 
     &:hover{
       background: #23d997;
       color: #222;
     }
   }
+  h1{
+    font-family: "Lobster", "Inter", sans-serif;
+  }
 
   h2{
     font-size: 4rem;
     font-weight: lighter;
+    color: #eee;
+  }
+  h3{
     color: #eee;
   }
   h4{
@@ -41,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p{
     font-size: 1.4rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
     color: #ccc;
     line-height: 150%;
   }
