@@ -1,21 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <a href="#about">Capture</a>
+        <Link id="logo" to="/">
+          Capture
+        </Link>
       </h1>
       <ul>
         <li>
-          <a href="#about">1. About Us</a>
+          <Link to="/">1. About Us</Link>
         </li>
         <li>
-          <a href="#work">2. Our Work</a>
+          <Link to="/work">2. Our Work</Link>
         </li>
         <li>
-          <a href="#contact">3. Contact Us</a>
+          <Link to="/contact">3. Contact Us</Link>
         </li>
       </ul>
     </StyledNav>
@@ -29,18 +32,17 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 1rem 5%;
   background: #282828;
-  a {
-    text-decoration: none;
-    color: white;
+  #logo {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    font-family: "Lobster", cursive;
   }
   h1 {
-    a {
-      font-size: 1.8rem;
-      font-weight: lighter;
-      font-family: "Lobster", cursive;
-    }
-
     flex: 1 1 40rem;
+  }
+  a {
+    text-decoration: none;
+    color: #eee;
   }
   ul {
     flex: 1 1 40rem;
