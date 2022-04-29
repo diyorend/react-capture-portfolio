@@ -28,9 +28,7 @@ const GlobalStyle = createGlobalStyle`
       color: #222;
     }
   }
-  h1{
-    font-family: "Lobster", "Inter", sans-serif;
-  }
+  
 
   h2{
     font-size: 4rem;

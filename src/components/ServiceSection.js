@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { About, Hide, Desc, Image } from "../styles";
+import { About, Desc, Image } from "../styles";
 
 //Icons
 import clock from "../img/clock.svg";
