@@ -11,7 +11,11 @@ import {
   lineAnim,
   slider,
   sliderContainer,
+  scrollReveal,
 } from "../animation";
+
+// animation to scroll
+import { useScroll } from "../components/useScroll";
 
 //image
 import athlete from "../img/athlete-small.png";
@@ -19,6 +23,9 @@ import goodtimes from "../img/goodtimes-small.png";
 import theracer from "../img/theracer-small.png";
 
 const OurWork = () => {
+  const [el, controls] = useScroll();
+  const [el1, controls1] = useScroll();
+
   return (
     <Work
       variants={pageAnimation}
@@ -44,17 +51,28 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie>
+      <Movie
+        ref={el}
+        variants={scrollReveal}
+        animate={controls}
+        initial="hidden"
+      >
         <h2>The Racer</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
 
         <Link to="/work/the-racer">
           <img className="the-racer" src={theracer} alt="theracer" />
         </Link>
       </Movie>
-      <Movie>
+      <Movie
+        ref={el1}
+        variants={scrollReveal}
+        animate={controls1}
+        initial="hidden"
+      >
         <h2>Good Times</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+
         <Link to="/work/good-times">
           <img className="good-times" src={goodtimes} alt="goodtimes" />
         </Link>
@@ -68,7 +86,7 @@ const Work = styled(motion.div)`
   overflow: hidden;
   padding: 5rem 5%;
 `;
-const Movie = styled.div`
+const Movie = styled(motion.div)`
   padding-bottom: 5rem;
   h2 {
     padding: 1rem 0;
