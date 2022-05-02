@@ -7,8 +7,11 @@ import { titleAnim, fade, photoAnim } from "../animation";
 import { motion } from "framer-motion";
 // Wave
 import Wave from "./Wave";
+// contact us path
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
   return (
     <About>
       <Desc>
@@ -29,7 +32,9 @@ const AboutSection = () => {
           Contact us for any photography idea that you have. We have
           professionals with amazing skills.
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <motion.button onClick={() => navigate("/contact")} variants={fade}>
+          Contact Us
+        </motion.button>
       </Desc>
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />

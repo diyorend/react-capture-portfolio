@@ -8,16 +8,29 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     padding: 0;
   }
+  html{
+    @media (max-width: 1250px) {
+      font-size: 80%;
+    }
+    @media (max-width:700px){
+      font-size:60%;
+    } 
+    transition: all 0.5s ease;
+    scroll-behavior: smooth;
+  }
   body{
     background: #1b1b1b;
     font-family: "Inter", sans-serif;
   }
   button{
+    @media (max-width: 900px){
+      border: 1px solid #23d997;
+    }
     font-size: 1.4rem;
     font-weight: bold;
     cursor: pointer;
     padding: 1rem 2.5rem;
-    border: 3px solid #23d997;
+    border: 2px solid #23d997;
     background: transparent;
     color:#fff;
     transition: all 0.5s ease;

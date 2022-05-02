@@ -16,7 +16,8 @@ import {
 
 // animation to scroll
 import { useScroll } from "../components/useScroll";
-
+//scroll top
+import ScrollTop from "../components/ScrollTop";
 //image
 import athlete from "../img/athlete-small.png";
 import goodtimes from "../img/goodtimes-small.png";
@@ -77,6 +78,7 @@ const OurWork = () => {
           <img className="good-times" src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
@@ -87,6 +89,9 @@ const Work = styled(motion.div)`
   padding: 5rem 5%;
 `;
 const Movie = styled(motion.div)`
+  @media (max-width: 900px) {
+    padding-bottom: 2rem;
+  }
   padding-bottom: 5rem;
   h2 {
     padding: 1rem 0;

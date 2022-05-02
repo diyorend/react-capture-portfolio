@@ -71,10 +71,10 @@ const ServiceSection = () => {
 //style
 const Services = styled(About)`
   h2 {
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
   }
   p {
-    width: 70%;
+    width: 90%;
   }
 `;
 const Cards = styled.div`

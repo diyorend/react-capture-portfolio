@@ -49,6 +49,9 @@ const Details = styled(motion.div)`
 `;
 const Headline = styled.div`
   min-height: 90vh;
+  @media (max-width: 700px) {
+    min-height: 60vh;
+  }
 
   h2 {
     text-align: center;
@@ -64,13 +67,25 @@ const Headline = styled.div`
 
 const Awards = styled.div`
   display: flex;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    min-height: 50vh;
+    padding: 1.5rem;
+  }
   min-height: 80vh;
   padding: 2rem 5%;
   align-items: center;
   justify-content: space-around;
 `;
 const AwardStyled = styled.div`
+  @media (max-width: 700px) {
+    padding: 1rem;
+    p {
+      padding: 1rem;
+    }
+  }
   padding: 2rem;
+
   .line {
     width: 100%;
     background: #23d997;

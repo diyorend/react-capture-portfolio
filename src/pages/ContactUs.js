@@ -51,8 +51,8 @@ const Title = styled(motion.h2)`
 `;
 const Circle = styled.div`
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background: #353535;
 `;
 const Social = styled(motion.div)`
@@ -60,7 +60,7 @@ const Social = styled(motion.div)`
   align-items: center;
   h2 {
     margin: 1rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 `;
 
