@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { About, Desc, Image } from "../styles";
 
+// animation
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
+
 //Icons
 import clock from "../img/clock.svg";
 import money from "../img/money.svg";
@@ -10,8 +14,15 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 
 const ServiceSection = () => {
+  const [element, controls] = useScroll();
+
   return (
-    <Services>
+    <Services
+      animate={controls}
+      ref={element}
+      variants={scrollReveal}
+      initial="hidden"
+    >
       <Desc>
         <h2>
           High <span>quality</span> services.

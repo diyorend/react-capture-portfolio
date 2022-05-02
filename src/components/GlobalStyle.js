@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   
 
   h2{
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: lighter;
     /* color: #eee; */
   }
@@ -41,15 +41,15 @@ const GlobalStyle = createGlobalStyle`
   h4{
     font-weight: bold;
     color: #eee;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   span{
     color: #23d997;
     font-weight: bold;
   }
   p{
-    font-size: 1.4rem;
-    padding: 2rem 0;
+    font-size: 1.2rem;
+    padding: 1.6rem 0;
     color: #ccc;
     line-height: 150%;
   }
