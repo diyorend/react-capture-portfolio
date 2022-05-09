@@ -1,3 +1,7 @@
+Animation, function and beautiful porfolio website for photographer. 
+i put it on netlify: 
+https://lighthearted-pudding-b5c257.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
